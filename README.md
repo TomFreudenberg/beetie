@@ -2,9 +2,11 @@
 
 > The name is taken from _ladybeetle_. They generally considered beneficial and lucky.
 
-## usage
+## License
 
-to be done ...
+Created by 4commerce technologies AG (Tom Freudenberg)
+
+You are allowed to use this framework under the terms of the [GNU LGPL](http://www.gnu.org/licenses/lgpl-3.0-standalone.html)
 
 ## description
 
