@@ -176,11 +176,11 @@ my_get_options() {
 
 make_po_file() {
   local XGETTEXT=""
-  local PO_FILE="${LOCALIZE_BASE}/src/${LOCALIZE_FILE##*/}.${LOCALIZE_LANG}.po"
+  local PO_FILE="${LOCALIZE_BASE}/${LOCALIZE_LANG}/LC_MESSAGES/${LOCALIZE_FILE##*/}.po"
   local FIX_PO_FILE_CHARSET=""
 
   # GNU gettext
-  XGETTEXT="xgettext"
+  XGETTEXT="xgettext --lang=Shell"
 
   # check options
   [[ -f "${PO_FILE}" && -z "${LOCALIZE_CLEAN}" ]] && XGETTEXT="${XGETTEXT} -j"
@@ -231,7 +231,7 @@ make_po_file() {
 
 make_mo_file() {
   local MSGFMT=""
-  local PO_FILE="${LOCALIZE_BASE}/src/${LOCALIZE_FILE##*/}.${LOCALIZE_LANG}.po"
+  local PO_FILE="${LOCALIZE_BASE}/${LOCALIZE_LANG}/LC_MESSAGES/${LOCALIZE_FILE##*/}.po"
   local MO_FILE="${LOCALIZE_BASE}/${LOCALIZE_LANG}/LC_MESSAGES/${LOCALIZE_FILE##*/}.mo"
 
   # GNU gettext
