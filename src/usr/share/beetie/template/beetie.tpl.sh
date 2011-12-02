@@ -1,14 +1,33 @@
 #!/bin/bash
 #
+
+#
+# This file is part of beetie (https://github.com/TomFreudenberg/beetie/wiki).
+#
+# Beetie is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
 CPRIGHT1="Please enter your authoring information"
 CPRIGHT2="Allowed to use under the terms of the GNU LGPL"
 CNSCRIPT="$(basename ${0})"
 CVERSION="${CNSCRIPT} (1.0.0)"
+
 #
 # please comment your stuff here
 
 # include beetie.base
-. /usr/lib/beetie/beetie.base
+. /usr/lib/beetie/beetie.base.sh
 
 #
 # just let the help be part of documentation in the beginning
@@ -71,7 +90,7 @@ my_initialize() {
   #   65 -  95 reserved by framework errors
   #   96 - 255 good for custom errors
   #
-  # let ERR_MY_ERROR="${ERR_CUSTM_BASE} + 0"
+  # let ERR_MY_ERROR="${ERR_CUSTOM_BASE}+0"
 
   # initialize local parameter
   # please place your code here
