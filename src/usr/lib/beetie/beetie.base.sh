@@ -390,7 +390,7 @@ __abort_if_param_assigned() {
 }
 
 #
-# abort_miss_mandatory_param: test and abort if mandatory is missing
+# abort_if_miss_mandatory_param: test and abort if mandatory is missing
 #
 __abort_if_miss_mandatory_param() {
   #
