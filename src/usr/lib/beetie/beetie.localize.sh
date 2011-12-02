@@ -28,8 +28,8 @@ CVERSION="${CNSCRIPT} (1.0.0)"
 # localization of your scripts. It controls xgettext and
 # msgfmt
 
-# include beetie.base
-. /usr/lib/beetie/beetie.base
+# include beetie.base.sh
+. /usr/lib/beetie/beetie.base.sh
 
 #
 # just let the help be part of documentation in the beginning
