@@ -10,7 +10,7 @@ You are allowed to use this framework under the terms of the [GNU LGPL](http://w
 
 ## description
 
-You will find additional information at [Wiki](beetie/wiki)
+You will find additional information at [Wiki](beetie/wiki) { not yet available }
 
 ## installation
 
